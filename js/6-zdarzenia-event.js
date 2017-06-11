@@ -43,9 +43,9 @@ function klikHeader(){
 document.getElementsByTagName('header')[0].onclick = klikHeader;
 
 
-function klikH1() {
+function klikH1(e) {
     console.log('kliknąłęś w H1');
-    stopPropagation();
+    e.stopPropagation();
 }
 
 document.getElementsByTagName('h1')[0].onclick = klikH1;
